@@ -1,7 +1,9 @@
 <script setup lang="ts">
-const msg = ref('Hello world!');
+import * as THREE from 'three';
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">{{ msg }}</h1>
+  <div>
+    <div class="fixed right-2 bottom-2 text-xs leading-none">v{{ THREE.REVISION }}</div>
+  </div>
 </template>
